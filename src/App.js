@@ -1,41 +1,74 @@
-import "./App.css";
-import logo from "./logo.png";
+import { Routes, Route, Navigate } from "react-router";
+import "font-awesome/css/font-awesome.min.css";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
+import "./App.css";
+import MockAPI from "./components/MockAPI";
+import Products from "./pages/Products/Products";
+import Cart from "./pages/Cart/Cart";
+import Home from "./pages/Home/Home";
+import Login from "./pages/Login/Login";
+import SignUp from "./pages/SignUp/SignUp";
+import Navbar from "./components/Navbar/Navbar";
+import Wishlist from "./pages/Wishlist/Wishlist";
+import Checkout from "./pages/Checkout/Checkout";
+import UserProfile from "./pages/UserProfile/UserProfile";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import SingleProduct from "./pages/Products/SingleProduct";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} alt="mockBee logo" width="180" height="180" />
-        <h1 className="brand-title">
-          Welcome to <span>mockBee!</span>
-        </h1>
-        <p className="brand-description">
-          Get started by editing <code>src/App.js</code>
-        </p>
-        <div className="links">
-          <a
-            href="https://mockbee.netlify.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Explore mockBee
-          </a>
-          <a
-            href="https://mockbee.netlify.app/docs/api/introduction"
-            target="_blank"
-            rel="noreferrer"
-          >
-            API Documentation
-          </a>
-          <a
-            href="https://github.com/neogcamp/mockBee"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Contribute
-          </a>
-        </div>
-      </header>
+      <Navbar />
+      <ToastContainer
+        position="top-right"
+        autoClose="500"
+        limit="1"
+        style={{ top: "4.5em", right: "0em" }}
+      />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/product/:productId" element={<SingleProduct />} />
+        <Route
+          path="/cart"
+          element={
+            <PrivateRoute>
+              <Cart />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/wishlist"
+          element={
+            <PrivateRoute>
+              <Wishlist />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/checkout"
+          element={
+            <PrivateRoute>
+              <Checkout />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/user-profile"
+          element={
+            <PrivateRoute>
+              <UserProfile />
+            </PrivateRoute>
+          }
+        />
+        <Route path="/404" element={<ErrorPage />} />
+        <Route path="*" element={<Navigate to={"/404"} />} />
+        <Route path="/mock-api" element={<MockAPI />} />
+      </Routes>
     </div>
   );
 }

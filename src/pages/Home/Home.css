@@ -1,0 +1,49 @@
+.home-container{
+    padding: 3rem 4rem;
+}
+.home-img-container{
+    position: relative;
+}
+.background-image-container{
+    background-image: url(https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80);
+    background-size: cover;
+    height: 31.25rem;
+    background-repeat: no-repeat;
+    background-position: 50% center;
+}
+.home-page-btn{
+    position: absolute;
+    right: 20rem;
+    top: 15rem;
+}
+.btn-home-page{
+    padding: 1rem 2rem;
+    font-size: large;
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+.category-container{
+    margin-top: 2rem;
+}
+.categories{
+    display: flex;
+    justify-content: center;
+    grid-gap: 1rem;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+@media screen and (max-width: 900px){
+    .categories{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 600px){
+    .background-image-container{
+        height: 18rem;
+    }
+
+}

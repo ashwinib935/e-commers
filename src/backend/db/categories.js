@@ -8,20 +8,20 @@ import { v4 as uuid } from "uuid";
 export const categories = [
   {
     _id: uuid(),
-    categoryName: "fiction",
+    categoryName: "Motivation",
     description:
-      "literature in the form of prose, especially novels, that describes imaginary events and people",
+      "Motivation books are guides for inciting action and getting things done.",
   },
   {
     _id: uuid(),
-    categoryName: "non-fiction",
+    categoryName: "Business",
     description:
-      "Non-fiction is writing that gives information or describes real events, rather than telling a story.",
+      "Business books are practical guides to building and running successful enterprises.",
   },
   {
     _id: uuid(),
-    categoryName: "horror",
+    categoryName: "Comics",
     description:
-      "Meant to cause discomfort and fear for both the character and readers, horror writers often make use of supernatural and paranormal elements in morbid stories that are sometimes a little too realistic.",
+      "Comics books consists of comics art in the form of sequential juxtaposed panels that represent individual scenes.",
   },
 ];

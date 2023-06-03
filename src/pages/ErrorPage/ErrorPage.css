@@ -1,0 +1,28 @@
+.error-page-main{
+    display: flex;
+    justify-content: center;
+    height: 87vh;
+    display: flex;
+    gap: 20rem 10rem;
+    grid-gap: 20rem 10rem;
+    justify-content: center;
+    align-items: center;
+}
+.error-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border: 2px solid var(--secondary-color);
+}
+.error-page-container .btn-action{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.btn-home{
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 1rem;
+}

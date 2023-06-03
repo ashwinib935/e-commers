@@ -1,0 +1,43 @@
+.user-profile-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.user-profile-main h2{
+    margin-bottom: 2rem;
+}
+.user-profile{
+    width: 35vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+}
+.user-profile-header{
+    border: 1px solid;
+    text-align: center;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+.user-profile-btn,.user-address-btn{
+    width: 50%;
+    height: 100%;
+    border: 1px solid;
+    padding: 1rem;
+    color: black;
+}
+.user-profile-details{
+padding: 0.5rem;
+}
+
+
+@media screen and (max-width: 750px){
+
+    .user-profile{
+        width: 80vw;
+    }
+}

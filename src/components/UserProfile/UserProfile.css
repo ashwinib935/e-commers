@@ -1,0 +1,13 @@
+.user-details-main{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem
+}
+.profile-action{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+}
+.profile-action .btn{
+width: 5rem;
+}

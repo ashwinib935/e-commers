@@ -1,0 +1,121 @@
+.navbar{
+    flex-direction: column;
+    z-index: 10;
+    background-color: var(--primary-color);
+}
+.navbar-main{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.main-icon{
+    display: none !important;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+.title{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: none;
+}
+.link{
+    text-decoration: none;
+     cursor: pointer;
+}
+.icon {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    padding: 0.4rem 0.9rem;
+    grid-gap: 0.5rem;
+    gap: 0.5rem;
+    border-radius: var(--border-sm);
+    width: 25%;
+    overflow: auto;
+    border-radius: var(--border-lg)
+}
+.search-container .fa {
+    color: var(--tertiary-color);
+}
+
+.search-bar {
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.navbar-right {
+    grid-gap: 2rem;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+.navbar-right li {
+    cursor: pointer;
+}
+.nav-cart, .search-container {
+    display: flex;
+    align-items: center;
+   
+}
+.nav-cart{
+    grid-gap: 0.8rem;
+    gap: 0.8rem;
+}
+.badge{
+color: white;
+text-decoration: none;
+}
+.notification-icon{
+    background-color: var(--selected-color);
+}
+@media screen and (max-width: 900px){
+    .main-icon{
+        display: inline-block !important;
+    } 
+
+}
+
+
+@media screen and (max-width: 700px){
+    .navbar, .navbar-main {
+        justify-content: space-between;
+    }
+    .search-container {
+        display: none;
+    }
+    .search-mob {
+        display: flex;
+        width: 90%;
+    }
+    .title{
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    .navbar-right {
+        font-size: 1.2rem;
+    }
+  
+}
+
+
+@media screen and (min-width: 699px){
+    .search-mob {
+        display: none;
+    }
+   
+
+}
+@media screen and (max-width: 550px){
+    .icon {
+        font-size: 1.3rem;
+    }
+    .navbar-right li span {
+       display: block;
+    }
+}
+

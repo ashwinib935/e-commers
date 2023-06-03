@@ -1,0 +1,25 @@
+.main-footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    grid-gap: 0.5rem;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color:var(--white) ;
+}
+.footer-links {
+    font-size: 1.75rem;
+    display: flex;
+    grid-gap: 2rem;
+    gap: 2rem;
+    color: var(--white);
+}
+.footer-icon{
+    color: var(--white);    
+}
+.footer-text {
+    font-size: .9rem;
+}

@@ -1,0 +1,76 @@
+.filter-container{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 100%;
+    border-right: 1px solid var(--lightGrey);
+    grid-gap: 2rem;
+    gap: 2rem;
+    position: fixed;
+    left: 0;
+    overflow-y: auto;
+    z-index: 5;
+    background-color: var(--white);
+    padding: 1rem 2rem 80px;
+  }
+.filter-head{
+    display: flex;
+    justify-content: space-between;
+    gap:0.5rem
+}
+.filter-btn-clear{
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: transparent;
+}
+.filter-container>div>h4 {
+    margin-bottom: 1rem;
+}
+
+.price-range-and-slider{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem
+}
+.price-range{
+    display: flex;
+    justify-content: space-between;
+    gap:0.5rem
+}
+.slider{
+    cursor: pointer;
+}
+.filter-subcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:0.5rem
+}
+
+.radio-input, .checkbox-input{
+    accent-color: var(--secondary-color);
+}
+input[type=range]::-webkit-slider-thumb {
+    background-color: var(--secondary-color);
+}
+
+
+
+  @media screen and (max-width: 900px){
+    .trans-off{
+        left: -30rem;
+        transition: left .5s ease-out;
+    }
+    .trans-on{
+        left: 0rem;
+        transition: left .5s ease-out;
+    }
+
+}
+@media screen and (max-width: 700px){
+    .filter-container{
+        width: 200px;
+    }
+
+}
