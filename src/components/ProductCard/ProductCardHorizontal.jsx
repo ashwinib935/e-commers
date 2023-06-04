@@ -7,6 +7,13 @@ function ProductCardHorizontal({ carItem }) {
   const { handleQuantity, handleRemoveFromCart } = useContext(CartContext);
   const { handleAddToWishlist, handleRemoveFromWishlist, isInWishlist } =
     useContext(WishlistContext);
+  const handleQuantityAndRemove = (quantityType, item) => {
+    if (item.qty <= 0) {
+      handleRemoveFromCart(carItem._id);
+    } else {
+      handleQuantity(quantityType, item._id);
+    }
+  };
   return (
     <div className="card horizontal-container" key={carItem._id}>
       <div className="card-horizontal">
@@ -26,7 +33,7 @@ function ProductCardHorizontal({ carItem }) {
           <div className="qty">
             <button
               className="minus"
-              onClick={() => handleQuantity("decrement", carItem._id)}
+              onClick={() => handleQuantityAndRemove("decrement", carItem)}
               disabled={carItem.qty === 1}
             >
               -
