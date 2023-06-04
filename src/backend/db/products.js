@@ -91,8 +91,8 @@ export const products = [
     image:
       "https://m.media-amazon.com/images/I/51TGU8igF-L._SX310_BO1,204,203,200_.jpg",
     category: "Comics",
-    oldPrice: 205,
-    newPrice: 150,
+    oldPrice: 155,
+    newPrice: 50,
     discount: 37,
     rating: 1.5,
     isInStock: true,
