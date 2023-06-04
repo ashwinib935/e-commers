@@ -32,7 +32,7 @@ export const reducerFunc = (state, action) => {
     case "HOME_CATEGORY":
       return {
         ...state,
-        category: [action.payload],
+        category: [...state.category, action.payload],
       };
     default:
       return state;
