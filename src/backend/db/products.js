@@ -74,7 +74,7 @@ export const products = [
   {
     _id: "6",
     name: "The Girl Who Drank the Moon",
-    author: "by Kelly Barnhill",
+    author: "Kelly Barnhill",
     image:
       "https://m.media-amazon.com/images/I/51CmZgnxeXL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg",
     category: "Comics",
