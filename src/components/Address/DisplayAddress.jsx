@@ -51,13 +51,13 @@ function DisplayAddress({ addresses, setIsFormOpen }) {
           checked={isAddressSelected(newAddress, _id)}
           onChange={(event) => handleChange(event, _id)}
         />
-        <span>Name - {name}</span>
+        <span>Name: {name}</span>
         <span> | </span>
-        <span>Ph No - +91 {number}</span>
+        <span>Ph No: +91 {number}</span>
       </div>
       <div className="address-details">
-        <span>Address - {address}</span>
-        <span>Landmaark - {landmark}</span>
+        <span>Address: {address}</span>
+        <span>Landmaark: {landmark}</span>
       </div>
       <div className="update-btn-container">
         <button className="btn success" onClick={() => handleEditClick(_id)}>
