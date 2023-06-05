@@ -1,3 +1,45 @@
-## E-Commerce Backend
+# BookStore
 
-This folder contains the Mock Backend created for E-Commerce App. It contains different API end-points and database configuration for building E-Commerce; so that you can focus on building Frontend.
+
+##  How to install and run locally ?
+
+```
+$ git clone "https://github.com/ashwinib935/e-commers.git"
+$ cd e-commers
+$ npm install
+$ npm start
+```
+
+## Features 
+- Home Page
+- Product Listing Page
+- Single Product Page
+- Filters by:
+  - Price
+  - Category
+  - Sizes
+  - Ratings
+- Search
+- Wishlist Management
+- Cart Management
+- Search
+- Loading & Alerts
+- Authentication:
+
+  - Sign-up
+  - Login
+  - Logout
+
+- Address Management
+- Checkout
+- Toasts
+
+## Build With 
+- React Js
+- React Context API + useReducer
+- React Router 
+- Vanilla CSS
+- MockBee for backend
+
+## ** DEMO VIDEO-**
+https://www.loom.com/share/c7f8c698beac491097e85245f0c6cadc
