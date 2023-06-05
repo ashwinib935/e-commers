@@ -42,3 +42,4 @@ $ npm start
 - MockBee for backend
 
 ## ** DEMO VIDEO-**
+https://www.loom.com/share/c7f8c698beac491097e85245f0c6cadc
